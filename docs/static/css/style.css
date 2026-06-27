@@ -50,6 +50,7 @@ body {
 .authors {
   font-size: 1.05rem;
   margin: 8px 0 4px;
+  color: var(--maize);
 }
 .authors a { color: var(--maize); text-decoration: none; }
 .authors a:hover { text-decoration: underline; }
