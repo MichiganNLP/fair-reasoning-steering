@@ -3,7 +3,7 @@
 ### Characterizing Deductive Stereotyping and Mitigating It with Fair-GCG
 
 [![Paper](https://img.shields.io/badge/arXiv-coming%20soon-b31b1b.svg)](https://arxiv.org/)
-[![Project Page](https://img.shields.io/badge/Project-Page-blue.svg)](https://michigannlp.github.io/fair-reasoning-steering/)
+[![Project Page](https://img.shields.io/badge/Project-Page-blue.svg)](https://lit.eecs.umich.edu/fair-reasoning-steering/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
 Official code, processed data, and result files for our paper on **reasoning-time fairness steering** in large language models.
