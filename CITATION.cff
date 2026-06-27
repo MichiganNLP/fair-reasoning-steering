@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this code or data, please cite the following work."
+title: "Wait, am I Being Fair? Characterizing Deductive Stereotyping and Mitigating It with Fair-GCG"
+authors:
+  - family-names: Deng
+    given-names: Naihao
+  - family-names: Zhu
+    given-names: Yilun
+  - family-names: Nwatu
+    given-names: Joan
+  - family-names: Scott
+    given-names: Clayton
+  - family-names: Mihalcea
+    given-names: Rada
+year: 2026
+license: MIT
+repository-code: "https://github.com/MichiganNLP/fair-reasoning-steering"

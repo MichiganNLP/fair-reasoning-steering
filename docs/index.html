@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wait, am I Being Fair? &middot; Fair Reasoning Steering</title>
+  <meta name="description" content="Characterizing deductive stereotyping in LLM reasoning and mitigating it with Fair-GCG, a reasoning-time injection framework.">
+  <meta property="og:title" content="Wait, am I Being Fair? Characterizing Deductive Stereotyping and Mitigating It with Fair-GCG">
+  <meta property="og:image" content="static/images/teaser.png">
+  <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+
+  <header class="hero">
+    <div class="container">
+      <h1 class="title">Wait, am I Being Fair?</h1>
+      <h2 class="subtitle">Characterizing Deductive Stereotyping and Mitigating It with Fair-GCG</h2>
+
+      <p class="authors">
+        <a href="https://dnaihao.github.io/">Naihao Deng</a>,
+        Yilun Zhu,
+        Joan Nwatu,
+        Clayton Scott,
+        <a href="https://web.eecs.umich.edu/~mihalcea/">Rada Mihalcea</a>
+      </p>
+      <p class="affiliation">University of Michigan &middot; <a href="https://lit.eecs.umich.edu/">Language &amp; Information Technologies (MichiganNLP)</a></p>
+
+      <div class="buttons">
+        <a class="button" href="https://arxiv.org/" title="arXiv (coming soon)">&#128196; Paper</a>
+        <a class="button" href="https://github.com/MichiganNLP/fair-reasoning-steering">&#128187; Code</a>
+        <a class="button" href="https://github.com/MichiganNLP/fair-reasoning-steering/tree/main/data">&#128202; Data</a>
+        <a class="button" href="#bibtex">&#128221; BibTeX</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <p class="warning">&#9888; This page and the underlying benchmarks contain examples of toxic and offensive stereotypes, used for the purpose of studying and mitigating bias.</p>
+
+    <figure class="teaser">
+      <img src="static/images/teaser.png" alt="Overview of deductive stereotyping and Fair-GCG reasoning-time steering">
+      <figcaption><b>Deductive stereotyping:</b> models apply population-level regularities to individual cases, producing logically coherent yet socially biased inferences. <b>Fair-GCG</b> discovers reasoning-time injection phrases that steer the model back toward fairness-aware reasoning.</figcaption>
+    </figure>
+
+    <section>
+      <h2>Abstract</h2>
+      <p>
+        While reasoning generally improves fairness in recent large language models (LLMs), failures persist.
+        In this work, we identify a failure mode, <em>deductive stereotyping</em>, in which models apply
+        population-level statistical regularities to individual cases, producing logically coherent yet socially
+        biased inferences. We provide a statistical interpretation of this phenomenon. To steer models toward
+        fairness-aware reasoning, we propose a <em>reasoning-time injection framework</em>. We further introduce
+        <strong>Fair-GCG</strong> to systematically discover effective injection phrases. Injection phrases
+        discovered by Fair-GCG improve performance across multiple fairness benchmarks, generalize from smaller to
+        larger LLMs, improve reasoning-level fairness, reduce bias in open-ended generation, and transfer to
+        real-world fairness-sensitive tasks.
+      </p>
+    </section>
+
+    <section>
+      <h2>Key contributions</h2>
+      <ul>
+        <li><b>Deductive stereotyping.</b> We name and characterize a dominant failure mode in fairness-sensitive reasoning, and give it a Bayesian/statistical interpretation of <em>when</em> and <em>why</em> group priors shift individual-level conclusions.</li>
+        <li><b>Reasoning-time steering.</b> A mid-generation injection framework distinct from post-hoc self-reflection that nudges models toward fair inferences while they reason.</li>
+        <li><b>Fair-GCG.</b> The first adaptation of GCG-style discrete prompt optimization to bias mitigation. Discovered phrases outperform existing bias-mitigation methods and transfer across models, datasets, and scales.</li>
+      </ul>
+    </section>
+
+    <section id="bibtex">
+      <h2>BibTeX</h2>
+      <pre><code>@article{deng2026fair,
+  title   = {Wait, am I Being Fair? Characterizing Deductive Stereotyping and Mitigating It with Fair-GCG},
+  author  = {Deng, Naihao and Zhu, Yilun and Nwatu, Joan and Scott, Clayton and Mihalcea, Rada},
+  journal = {arXiv preprint},
+  year    = {2026}
+}</code></pre>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 The Authors. Released under the MIT License. Website template freely available for reuse.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

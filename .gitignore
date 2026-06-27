@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+
+# Environments
+.venv/
+venv/
+env/
+.env
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
+
+# Local experiment outputs (do not commit large artifacts)
+outputs/
+wandb/
+*.sif
+hf-cache/
